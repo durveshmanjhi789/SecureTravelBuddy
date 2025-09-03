@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C5DB9842E6857D0008E23B8 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB9832E6857D0008E23B8 /* FirebaseAI */; };
+		0C5DB9862E6857D0008E23B8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB9852E6857D0008E23B8 /* FirebaseAnalytics */; };
+		0C5DB9882E6857D0008E23B8 /* FirebaseAnalyticsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB9872E6857D0008E23B8 /* FirebaseAnalyticsCore */; };
+		0C5DB98A2E6857D0008E23B8 /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB9892E6857D0008E23B8 /* FirebaseAnalyticsIdentitySupport */; };
+		0C5DB98C2E6857D0008E23B8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB98B2E6857D0008E23B8 /* FirebaseAppCheck */; };
+		0C5DB99A2E68610E008E23B8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB9992E68610E008E23B8 /* FirebaseAuth */; };
+		0C5DB99D2E686236008E23B8 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB99C2E686236008E23B8 /* KeychainAccess */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C5DB93F2E681BD2008E23B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5DB9292E681BD0008E23B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C5DB9302E681BD0008E23B8;
+			remoteInfo = SecureTravelBuddy;
+		};
+		0C5DB9492E681BD2008E23B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5DB9292E681BD0008E23B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C5DB9302E681BD0008E23B8;
+			remoteInfo = SecureTravelBuddy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C5DB9312E681BD0008E23B8 /* SecureTravelBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureTravelBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5DB93E2E681BD2008E23B8 /* SecureTravelBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureTravelBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C5DB9482E681BD2008E23B8 /* SecureTravelBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureTravelBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0C5DB9332E681BD0008E23B8 /* SecureTravelBuddy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SecureTravelBuddy;
+			sourceTree = "<group>";
+		};
+		0C5DB9412E681BD2008E23B8 /* SecureTravelBuddyTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SecureTravelBuddyTests;
+			sourceTree = "<group>";
+		};
+		0C5DB94B2E681BD2008E23B8 /* SecureTravelBuddyUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SecureTravelBuddyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C5DB92E2E681BD0008E23B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C5DB98A2E6857D0008E23B8 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				0C5DB99A2E68610E008E23B8 /* FirebaseAuth in Frameworks */,
+				0C5DB99D2E686236008E23B8 /* KeychainAccess in Frameworks */,
+				0C5DB9862E6857D0008E23B8 /* FirebaseAnalytics in Frameworks */,
+				0C5DB9882E6857D0008E23B8 /* FirebaseAnalyticsCore in Frameworks */,
+				0C5DB98C2E6857D0008E23B8 /* FirebaseAppCheck in Frameworks */,
+				0C5DB9842E6857D0008E23B8 /* FirebaseAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5DB93B2E681BD2008E23B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5DB9452E681BD2008E23B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C5DB9282E681BD0008E23B8 = {
+			isa = PBXGroup;
+			children = (
+				0C5DB9332E681BD0008E23B8 /* SecureTravelBuddy */,
+				0C5DB9412E681BD2008E23B8 /* SecureTravelBuddyTests */,
+				0C5DB94B2E681BD2008E23B8 /* SecureTravelBuddyUITests */,
+				0C5DB9982E68610E008E23B8 /* Frameworks */,
+				0C5DB9322E681BD0008E23B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C5DB9322E681BD0008E23B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C5DB9312E681BD0008E23B8 /* SecureTravelBuddy.app */,
+				0C5DB93E2E681BD2008E23B8 /* SecureTravelBuddyTests.xctest */,
+				0C5DB9482E681BD2008E23B8 /* SecureTravelBuddyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C5DB9982E68610E008E23B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C5DB9302E681BD0008E23B8 /* SecureTravelBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5DB9522E681BD2008E23B8 /* Build configuration list for PBXNativeTarget "SecureTravelBuddy" */;
+			buildPhases = (
+				0C5DB92D2E681BD0008E23B8 /* Sources */,
+				0C5DB92E2E681BD0008E23B8 /* Frameworks */,
+				0C5DB92F2E681BD0008E23B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0C5DB9332E681BD0008E23B8 /* SecureTravelBuddy */,
+			);
+			name = SecureTravelBuddy;
+			packageProductDependencies = (
+				0C5DB9832E6857D0008E23B8 /* FirebaseAI */,
+				0C5DB9852E6857D0008E23B8 /* FirebaseAnalytics */,
+				0C5DB9872E6857D0008E23B8 /* FirebaseAnalyticsCore */,
+				0C5DB9892E6857D0008E23B8 /* FirebaseAnalyticsIdentitySupport */,
+				0C5DB98B2E6857D0008E23B8 /* FirebaseAppCheck */,
+				0C5DB9992E68610E008E23B8 /* FirebaseAuth */,
+				0C5DB99C2E686236008E23B8 /* KeychainAccess */,
+			);
+			productName = SecureTravelBuddy;
+			productReference = 0C5DB9312E681BD0008E23B8 /* SecureTravelBuddy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C5DB93D2E681BD2008E23B8 /* SecureTravelBuddyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5DB9552E681BD2008E23B8 /* Build configuration list for PBXNativeTarget "SecureTravelBuddyTests" */;
+			buildPhases = (
+				0C5DB93A2E681BD2008E23B8 /* Sources */,
+				0C5DB93B2E681BD2008E23B8 /* Frameworks */,
+				0C5DB93C2E681BD2008E23B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C5DB9402E681BD2008E23B8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0C5DB9412E681BD2008E23B8 /* SecureTravelBuddyTests */,
+			);
+			name = SecureTravelBuddyTests;
+			packageProductDependencies = (
+			);
+			productName = SecureTravelBuddyTests;
+			productReference = 0C5DB93E2E681BD2008E23B8 /* SecureTravelBuddyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C5DB9472E681BD2008E23B8 /* SecureTravelBuddyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5DB9582E681BD2008E23B8 /* Build configuration list for PBXNativeTarget "SecureTravelBuddyUITests" */;
+			buildPhases = (
+				0C5DB9442E681BD2008E23B8 /* Sources */,
+				0C5DB9452E681BD2008E23B8 /* Frameworks */,
+				0C5DB9462E681BD2008E23B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C5DB94A2E681BD2008E23B8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0C5DB94B2E681BD2008E23B8 /* SecureTravelBuddyUITests */,
+			);
+			name = SecureTravelBuddyUITests;
+			packageProductDependencies = (
+			);
+			productName = SecureTravelBuddyUITests;
+			productReference = 0C5DB9482E681BD2008E23B8 /* SecureTravelBuddyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C5DB9292E681BD0008E23B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					0C5DB9302E681BD0008E23B8 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					0C5DB93D2E681BD2008E23B8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 0C5DB9302E681BD0008E23B8;
+					};
+					0C5DB9472E681BD2008E23B8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 0C5DB9302E681BD0008E23B8;
+					};
+				};
+			};
+			buildConfigurationList = 0C5DB92C2E681BD0008E23B8 /* Build configuration list for PBXProject "SecureTravelBuddy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C5DB9282E681BD0008E23B8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0C5DB99B2E686236008E23B8 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0C5DB9322E681BD0008E23B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C5DB9302E681BD0008E23B8 /* SecureTravelBuddy */,
+				0C5DB93D2E681BD2008E23B8 /* SecureTravelBuddyTests */,
+				0C5DB9472E681BD2008E23B8 /* SecureTravelBuddyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C5DB92F2E681BD0008E23B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5DB93C2E681BD2008E23B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5DB9462E681BD2008E23B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C5DB92D2E681BD0008E23B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5DB93A2E681BD2008E23B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5DB9442E681BD2008E23B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C5DB9402E681BD2008E23B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C5DB9302E681BD0008E23B8 /* SecureTravelBuddy */;
+			targetProxy = 0C5DB93F2E681BD2008E23B8 /* PBXContainerItemProxy */;
+		};
+		0C5DB94A2E681BD2008E23B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C5DB9302E681BD0008E23B8 /* SecureTravelBuddy */;
+			targetProxy = 0C5DB9492E681BD2008E23B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0C5DB9502E681BD2008E23B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C5DB9512E681BD2008E23B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C5DB9532E681BD2008E23B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.durvesh.coredata.SecureTravelBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C5DB9542E681BD2008E23B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.durvesh.coredata.SecureTravelBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C5DB9562E681BD2008E23B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.durvesh.coredata.SecureTravelBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureTravelBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecureTravelBuddy";
+			};
+			name = Debug;
+		};
+		0C5DB9572E681BD2008E23B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.durvesh.coredata.SecureTravelBuddyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureTravelBuddy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SecureTravelBuddy";
+			};
+			name = Release;
+		};
+		0C5DB9592E681BD2008E23B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.durvesh.coredata.SecureTravelBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecureTravelBuddy;
+			};
+			name = Debug;
+		};
+		0C5DB95A2E681BD2008E23B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.durvesh.coredata.SecureTravelBuddyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SecureTravelBuddy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C5DB92C2E681BD0008E23B8 /* Build configuration list for PBXProject "SecureTravelBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5DB9502E681BD2008E23B8 /* Debug */,
+				0C5DB9512E681BD2008E23B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C5DB9522E681BD2008E23B8 /* Build configuration list for PBXNativeTarget "SecureTravelBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5DB9532E681BD2008E23B8 /* Debug */,
+				0C5DB9542E681BD2008E23B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C5DB9552E681BD2008E23B8 /* Build configuration list for PBXNativeTarget "SecureTravelBuddyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5DB9562E681BD2008E23B8 /* Debug */,
+				0C5DB9572E681BD2008E23B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C5DB9582E681BD2008E23B8 /* Build configuration list for PBXNativeTarget "SecureTravelBuddyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C5DB9592E681BD2008E23B8 /* Debug */,
+				0C5DB95A2E681BD2008E23B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.2.0;
+			};
+		};
+		0C5DB99B2E686236008E23B8 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0C5DB9832E6857D0008E23B8 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		0C5DB9852E6857D0008E23B8 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0C5DB9872E6857D0008E23B8 /* FirebaseAnalyticsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsCore;
+		};
+		0C5DB9892E6857D0008E23B8 /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		0C5DB98B2E6857D0008E23B8 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		0C5DB9992E68610E008E23B8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		0C5DB99C2E686236008E23B8 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0C5DB99B2E686236008E23B8 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0C5DB9292E681BD0008E23B8 /* Project object */;
+}
