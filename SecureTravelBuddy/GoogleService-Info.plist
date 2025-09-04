@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBsM0OJyh1ekv8yoP8l22ofFQP1V_-vjQo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>288617984045</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.durvesh.coredata.SecureTravelBuddy</string>
+	<key>PROJECT_ID</key>
+	<string>travelbuddy-a0080</string>
+	<key>STORAGE_BUCKET</key>
+	<string>travelbuddy-a0080.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:288617984045:ios:b4c56b4aa0f8d6633e08a4</string>
+</dict>
+</plist>

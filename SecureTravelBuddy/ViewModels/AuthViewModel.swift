@@ -15,17 +15,19 @@ import KeychainAccess
 class AuthViewModel:ObservableObject{
     @Published var user:User?
     @Published var errorMessage:String?
-    
-    private let keychain = Keychain(service: "com.durvesh.SecureTravelBuddy")
-    
+    let storage = SecureStorage()
     func login(email:String,password:String) async {
         do{
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             
             self.user = User(id: result.user.uid, email: result.user.email ?? "", name: result.user.displayName ?? "")
             
-            keychain["auth_token"] = result.user.refreshToken
+            if let token = result.user.refreshToken {
+                storage.saveToken(token)
+            }
+           
         }catch{
+            debugPrint(error.localizedDescription)
             self.errorMessage = error.localizedDescription
         }
     }
@@ -34,17 +36,21 @@ class AuthViewModel:ObservableObject{
         do{
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.user = User(id: result.user.uid, email: result.user.email ?? "", name: result.user.displayName ?? "")
-            
-            keychain["auth_token"] = result.user.refreshToken
-            
+            if let token = result.user.refreshToken {
+                storage.saveToken(token)
+            }
+
         }catch{
+            let nsError = error as NSError
+            debugPrint("Firebase Auth error:", nsError)
+            debugPrint(error.localizedDescription)
             self.errorMessage = error.localizedDescription
         }
     }
     
     func logout(){
         try? Auth.auth().signOut()
-        keychain["auth_token"] = nil
+        storage.clearToken()
         user = nil
     }
     

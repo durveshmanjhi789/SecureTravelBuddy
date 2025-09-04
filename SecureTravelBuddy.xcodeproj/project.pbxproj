@@ -14,6 +14,7 @@
 		0C5DB98C2E6857D0008E23B8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB98B2E6857D0008E23B8 /* FirebaseAppCheck */; };
 		0C5DB99A2E68610E008E23B8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB9992E68610E008E23B8 /* FirebaseAuth */; };
 		0C5DB99D2E686236008E23B8 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 0C5DB99C2E686236008E23B8 /* KeychainAccess */; };
+		0CE331D92E695E8500864562 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0CE331D82E695E8500864562 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0460082E69D9AA006B32F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0C5DB9312E681BD0008E23B8 /* SecureTravelBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureTravelBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5DB93E2E681BD2008E23B8 /* SecureTravelBuddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureTravelBuddyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5DB9482E681BD2008E23B8 /* SecureTravelBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureTravelBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C5DB98A2E6857D0008E23B8 /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				0CE331D92E695E8500864562 /* Alamofire in Frameworks */,
 				0C5DB99A2E68610E008E23B8 /* FirebaseAuth in Frameworks */,
 				0C5DB99D2E686236008E23B8 /* KeychainAccess in Frameworks */,
 				0C5DB9862E6857D0008E23B8 /* FirebaseAnalytics in Frameworks */,
@@ -99,6 +102,7 @@
 				0C5DB9322E681BD0008E23B8 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		0C5DB9322E681BD0008E23B8 /* Products */ = {
 			isa = PBXGroup;
@@ -113,6 +117,7 @@
 		0C5DB9982E68610E008E23B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C0460082E69D9AA006B32F3 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				0C5DB98B2E6857D0008E23B8 /* FirebaseAppCheck */,
 				0C5DB9992E68610E008E23B8 /* FirebaseAuth */,
 				0C5DB99C2E686236008E23B8 /* KeychainAccess */,
+				0CE331D82E695E8500864562 /* Alamofire */,
 			);
 			productName = SecureTravelBuddy;
 			productReference = 0C5DB9312E681BD0008E23B8 /* SecureTravelBuddy.app */;
@@ -230,6 +236,8 @@
 			packageReferences = (
 				0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				0C5DB99B2E686236008E23B8 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				0CE331D72E695E8500864562 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0C045FBE2E69CE7C006B32F3 /* XCRemoteSwiftPackageReference "Quick" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0C5DB9322E681BD0008E23B8 /* Products */;
@@ -438,6 +446,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +474,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +598,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0C045FBE2E69CE7C006B32F3 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		0C5DB9822E6857D0008E23B8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -602,6 +620,14 @@
 			requirement = {
 				branch = master;
 				kind = branch;
+			};
+		};
+		0CE331D72E695E8500864562 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -641,6 +667,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0C5DB99B2E686236008E23B8 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
 			productName = KeychainAccess;
+		};
+		0CE331D82E695E8500864562 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0CE331D72E695E8500864562 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -9,42 +9,59 @@ import CoreData
 import Foundation
 import CoreLocation
 
-
+//core data
 class LocalDatabaseService{
+    
+    //    static let shared = LocalDatabaseService()
+    //
+    //    let container:NSPersistentContainer
+    //
+    //    private init() {
+    //        container = NSPersistentContainer(name: "SecureTravelBuddyModel")
+    //        container.loadPersistentStores { _ , error in
+    //            if let error = error {
+    //                fatalError("Core data Load\(error)")
+    //            }
+    //        }
+    //    }
+    //
+    //    func savePlace(name: String, latitude: Double, longitude: Double) {
+    //        let context = container.viewContext
+    //        let place = PlaceEntity(context: context)
+    //        place.name = name
+    //        place.latitude = latitude
+    //        place.longitude = longitude
+    //        try? context.save()
+    //
+    //    }
+    //
+    //    func fetchPlaces() -> [Place] {
+    //        let request:NSFetchRequest<PlaceEntity> = PlaceEntity.fetchRequest()
+    //
+    //        if let results = try? container.viewContext.fetch(request){
+    //            return results.map{Place(name: $0.name ?? "", coordinate: CLLocationCoordinate2D(latitude: $0.latitude, longitude: $0.longitude))
+    //
+    //            }
+    //        }
+    //        return []
+    //
+    //    }
+    //
+    //}
     
     static let shared = LocalDatabaseService()
     
-    let container:NSPersistentContainer
+    private init() {}
     
-    private init() {
-        container = NSPersistentContainer(name: "SecureTravelBuddyModel")
-        container.loadPersistentStores { _ , error in
-            if let error = error {
-                fatalError("Core data Load\(error)")
-            }
-        }
-    }
+    private var savedPlaces: [Place] = []
     
     func savePlace(name: String, latitude: Double, longitude: Double) {
-        let context = container.viewContext
-        let place = PlaceEntity(context: context)
-        place.name = name
-        place.latitude = latitude
-        place.longitude = longitude
-        try? context.save()
-        
+        let place = Place(name: name, coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+        savedPlaces.append(place)
     }
     
     func fetchPlaces() -> [Place] {
-        let request:NSFetchRequest<PlaceEntity> = PlaceEntity.fetchRequest()
-        
-        if let results = try? container.viewContext.fetch(request){
-            return results.map{Place(name: $0.name ?? "", coordinate: CLLocationCoordinate2D(latitude: $0.latitude, longitude: $0.longitude))
-                
-            }
-        }
-        return []
-        
+        return savedPlaces
     }
     
 }
